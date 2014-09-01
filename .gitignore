@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 logs
 *.log
 project/project
@@ -14,3 +15,22 @@ dist
 /.project
 /RUNNING_PID
 public/bower_components
+=======
+# Ignore Play! working directory #
+bin/
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/project
+/project/target
+/target
+tmp/
+test-result
+server.pid
+*.iml
+*.eml
+/dist/
+.cache
+>>>>>>> b7ab3eba0fbb7ddf678284c6f8bc985b66c98131
