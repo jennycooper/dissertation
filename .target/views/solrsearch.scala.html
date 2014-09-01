@@ -1,0 +1,129 @@
+@(message: String)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        
+        <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    </head>
+    
+    <body>
+
+		<div class="container">
+		<h2>Search Using Solr</h2>
+		
+		<h3>@message</h3>
+		<div class="centered">
+		@helper.form(action = routes.Solr.solrresults(), 'class -> "smart-green") {
+			<h1>Search French Index
+        		<span>Please enter a search term..</span>
+    		</h1>
+	    	<label class="text" >
+	        	<span>Enter Search Term:</span>
+				<input name="term1" class="text" />   
+				<input name="term2" type="hidden" value="french"/>
+			</label>
+			<label>
+        		<span>&nbsp;</span> 
+        		<button type="submit" name="Search Solr" class="button">Search</button> 
+    		</label>  		
+		}
+		
+		@helper.form(action = routes.Solr.solrresults(), 'class -> "smart-green") {
+			<h1>Search German Index
+        		<span>Please enter a search term.</span>
+    		</h1>
+	    	<label class="text" >
+	        	<span>Enter Search Term:</span>
+				<input name="term1" class="text" />  
+				<input name="term2" type="hidden" value="german"/>
+			</label>
+			<label>
+        		<span>&nbsp;</span> 
+        		<button type="submit" name="Search Solr" class="button">Search</button> 
+    		</label>  		
+		}
+		
+		@helper.form(action = routes.Solr.solrresults(), 'class -> "smart-green") {
+			<h1>Search Spanish Index
+        		<span>Please enter a search term.</span>
+    		</h1>
+	    	<label class="text" >
+	        	<span>Enter Search Term:</span>
+				<input name="term1" class="text" />    
+				<input name="term2" type="hidden" value="spanish"/>
+			</label>
+			<label>
+        		<span>&nbsp;</span> 
+        		<button type="submit" name="Search Solr" class="button">Search</button> 
+    		</label>  		
+		}
+		
+		@helper.form(action = routes.Solr.solrresults(), 'class -> "smart-green") {
+			<h1>Search Chinese Index
+        		<span>Please enter a search term..</span>
+    		</h1>
+	    	<label class="text" >
+	        	<span>Enter Search Term:</span>
+				<input name="term1" class="text" />  
+				<input name="term2" type="hidden" value="chinese"/>
+			</label>
+			<label>
+        		<span>&nbsp;</span> 
+        		<button type="submit" name="Search Solr" class="button">Search</button> 
+    		</label>  		
+		}
+		
+		@helper.form(action = routes.Solr.solrresults(), 'class -> "smart-green") {
+			<h1>Search Customized French Index
+        		<span>Please enter a search term..</span>
+    		</h1>
+	    	<label class="text" >
+	        	<span>Enter Search Term:</span>
+				<input name="term1" class="text" />  
+				<input name="term2" type="hidden" value="frcustomized"/>
+			</label>
+			<label>
+        		<span>&nbsp;</span> 
+        		<button type="submit" name="Search Solr" class="button">Search</button> 
+    		</label>  		
+		}
+		
+		@helper.form(action = routes.Solr.solrresults(), 'class -> "smart-green") {
+			<h1>Search Customized German Index
+        		<span>Please enter a search term..</span>
+    		</h1>
+	    	<label class="text" >
+	        	<span>Enter Search Term:</span>
+				<input name="term1" class="text" />  
+				<input name="term2" type="hidden" value="decustomized"/>
+			</label>
+			<label>
+        		<span>&nbsp;</span> 
+        		<button type="submit" name="Search Solr" class="button">Search</button> 
+    		</label>  		
+		}
+		
+		@helper.form(action = routes.Solr.solrresults(), 'class -> "smart-green") {
+			<h1>Search Customized Spanish Index
+        		<span>Please enter a search term..</span>
+    		</h1>
+	    	<label class="text" >
+	        	<span>Enter Search Term:</span>
+				<input name="term1" class="text" />  
+				<input name="term2" type="hidden" value="spcustomized"/>
+			</label>
+			<label>
+        		<span>&nbsp;</span> 
+        		<button type="submit" name="Search Solr" class="button">Search</button> 
+    		</label>  		
+		}
+		</div>
+		</div>
+	</body>
+</html>

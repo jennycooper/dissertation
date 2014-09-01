@@ -1,0 +1,13 @@
+@(message: String, results: List[String])
+
+<h2>@message</h2>
+<hr />
+<h2>Results are:</h2>
+
+<p>Number of files found: @results.length</p>
+    
+@for(result <- results){
+	<p>@result</p>
+}
+
+    

@@ -1,0 +1,101 @@
+@(message: String)
+@main("Solr Search"){
+   <h2 id="solr">Search Using Solr</h2><a href="#customized">Customized indices <span class="glyphicon glyphicon-chevron-down"></span></a>
+   <div class="centered">
+		@helper.form(action = routes.Solr.solrresults()) {
+	    	<fieldset>
+				<legend>French Index</legend>		
+				<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+					<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+					<input name="term2" type="hidden" value="french"/>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-4  col-lg-3">
+					<button type="submit" name="Search Solr" class="btn search">Search Solr French Index</button>
+				</div>
+			</fieldset>
+		}
+		
+		@helper.form(action = routes.Solr.solrresults()) {
+			<fieldset>
+				<legend>German Index</legend>		
+				<!-- <div class="row center-block"> -->
+				<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+					<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+					<input name="term2" type="hidden" value="german"/>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-lg-3">
+					<button type="submit" name="Search Solr" class="btn search">Search Solr German Index
+					</button>
+				</div>
+			</fieldset>  		
+		}
+		
+		@helper.form(action = routes.Solr.solrresults()) {
+			<fieldset>
+				<legend>Spanish Index</legend>		
+				<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+					<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+					<input name="term2" type="hidden" value="spanish"/>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-lg-3">
+					<button type="submit" name="Search Solr" class="btn search">Search Solr Spanish Index</button>
+				</div>
+			</fieldset>  		
+		}
+		
+		@helper.form(action = routes.Solr.solrresults()) {
+			<fieldset>
+				<legend>Chinese Index</legend>		
+				<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+					<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+					<input name="term2" type="hidden" value="chinese"/>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-lg-3">
+					<button type="submit" name="Search Solr" class="btn search" >Search Solr Chinese Index</button>
+				</div>
+			</fieldset>  		
+		}
+		<hr id="customized"/>
+   		<h2>Search Customized Indices</h2>
+   		<a href="#solr">Go to Solr <span class="glyphicon glyphicon-chevron-up"></span></a>
+		@helper.form(action = routes.Solr.solrresults()) {
+			<fieldset>
+				<legend>Customized French Index</legend>		
+				<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+					<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+					<input name="term2" type="hidden" value="frcustomized"/>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-4  col-lg-3">
+					<button type="submit" name="Search Solr" class="btn search">Search</button>
+				</div>
+			</fieldset>		
+		}
+		
+		@helper.form(action = routes.Solr.solrresults()) {
+			<fieldset>
+				<legend>Customized German Index</legend>		
+				<!-- <div class="row center-block"> -->
+				<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+					<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+					<input name="term2" type="hidden" value="decustomized"/>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-lg-3">
+					<button type="submit" name="Search Solr" class="btn search">Search</button>
+				</div>
+			</fieldset>  		  		
+		}
+		
+		@helper.form(action = routes.Solr.solrresults()) {
+			<fieldset>
+				<legend>Customized Spanish Index</legend>		
+				<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+					<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+					<input name="term2" type="hidden" value="spcustomized"/>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-lg-3">
+					<button type="submit" name="Search Solr" class="btn search">Search</button>
+				</div>
+			</fieldset>
+		}
+	</div>
+}

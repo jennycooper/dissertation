@@ -1,0 +1,72 @@
+body{
+    background: url(../images/tree.png);
+    background-size: cover;
+}
+form{
+    margin-bottom: 2em !important;
+}
+input{
+    min-width: 260px;
+    background-color: rgba(0,0,0,0.1) !important;
+    margin-bottom: .5em !important;
+}
+
+button{
+    min-width: 260px;
+    margin-bottom: 2em !important;
+    width: auto;
+}
+
+.search{
+
+    background: #eb8c2a;
+    color: white;
+}
+.search:hover{
+    background: #e47e15;
+    box-shadow: 0 0 2px 1px #5a5b55;
+    color: white !important;
+}
+
+h2 {
+    color: #288b9a !important;
+}
+a{
+    text-decoration: none; border-bottom:1px dotted;
+}
+
+div.jumbotron{
+    opacity: 0.3;
+}
+
+footer{
+    padding: 5px;
+    border-radius: 5px;
+    background: rgba(69,69,81,0.2);
+    border: 1px dotted rgba(69,69,81,0.8);
+}
+
+p.even, p.odd{
+    color: #f0eee1;
+    padding:0.5em;
+    margin: 0;
+    font-family: 'arial';
+    font-size: 18px;
+}
+p.even {
+    #background: #e47e15;
+    background: #997755;
+}
+p.odd{
+    background:  #666655
+}
+
+.footerholder{
+    height: 10em;
+    margin-top: 20px;
+}
+
+.largetext {
+	font-size: 20px;
+	margin-top: 5px;
+}

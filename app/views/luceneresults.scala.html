@@ -1,0 +1,15 @@
+@(message: String, results: List[String])
+@main("SearchTestApp"){
+<h2>Search Results Using Lucene</h2>
+<h3>@message</h3>
+<hr />
+	<h3>Found @results.length results:</h3>
+
+	@for((item, index) <- results.zipWithIndex) {
+	    @if(index % 2 == 0){
+		<p class = "even">@item</p>
+		} else {
+		<p class = "odd">@item</p>
+		}
+	}
+}

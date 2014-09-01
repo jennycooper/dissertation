@@ -1,0 +1,57 @@
+@(message: String)
+@main("Elastic Search"){
+	<h2>Search Using ElasticSearch</h2>
+	
+	@helper.form(action = routes.ElasticSearch.elasticsearchresults()) {
+		<fieldset>
+			<legend>French Index</legend>		
+			<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+				<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+				<input name="term2" type="hidden" value="french"/>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-4  col-lg-3">
+				<button type="submit" name="ElasticSearch" class="btn search">Search ElasticSearch French Index</button>
+			</div>
+		</fieldset>
+	}
+	    
+	@helper.form(action = routes.ElasticSearch.elasticsearchresults()) {
+		<fieldset>
+			<legend>German Index</legend>		
+			<!-- <div class="row center-block"> -->
+			<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+				<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+				<input name="term2" type="hidden" value="german"/>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-3">
+				<button type="submit" name="ElasticSearch" class="btn search">Search ElasticSearch German Index
+				</button>
+			</div>
+		</fieldset>
+	}
+	@helper.form(action = routes.ElasticSearch.elasticsearchresults()) {
+		<fieldset>
+			<legend>Spanish Index</legend>		
+			<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+				<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+				<input name="term2" type="hidden" value="spanish"/>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-3">
+				<button type="submit" name="ElasticSearch" class="btn search">Search ElasticSearch Spanish Index</button>
+			</div>
+		</fieldset>
+	}
+
+	@helper.form(action = routes.ElasticSearch.elasticsearchresults()) {
+		<fieldset>
+			<legend>Chinese Index</legend>		
+			<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+				<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+				<input name="term2" type="hidden" value="chinese"/>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-3">
+				<button type="submit" name="ElasticSearch" class="btn search" >Search ElasticSearch Chinese Index</button>
+			</div>
+		</fieldset>
+	}
+}

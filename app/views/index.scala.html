@@ -1,0 +1,31 @@
+@(message: String)
+@main("Welcome"){
+
+      <div class="largetext">
+        <p class="lead">This Web Application has been designed as part of my thesis, in order to allow me test how Lucene, Solr and ElasticSearch perform when searching using non-English languages.</p>
+        <p>The languages being tested are: French, German, Spanish and Chinese. A different index needs to be used for each language. </p>
+        <p>When creating the indices, a pre-defined set of test data was used for each language, that allows testing of features during a search such as stemming, accent removal, stopword removal, wildcard queries, and ranking of results. Please see the Appendix in the thesis report to see what test data has been used.</p>
+
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Lucene</h2>
+          <p>Lucene is a library of classes for implementing a search server. This application contains the functionality for creating the indexes for the 4 languages under test, by giving it the directory location where the test text documents for each language are stored. </p>
+          <p>The indexes have already been set up, and so only need to be recreated if additional test data was required.</p>
+          <p><a class="btn btn-primary" href="/lucenesearch" role="button"> View Lucene Search Page &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Solr</h2>
+          <p>Solr is a standalone search server, built on Lucene. It has been deployed on Tomcat7 on a separate Amazon EC2 instance. The default out-of-the-box analyzers have been used for indexing and querying of data. </p>
+          <p>Some customized analyzers have also been created, and can be used for searching on the Solr search page.</p>
+          <p><a class="btn btn-primary" href="/solrsearch" role="button"> View Solr Search Page &raquo;</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>ElasticSearch</h2>
+          <p>ElasticSearch is a standalone search server, built on Lucene. It has been deployed on a Netty server on a separate Amazon EC2 instance. The default out-of-the-box analyzers have been used for indexing and querying of data. </p>
+          <p><a class="btn btn-primary" href="/elasticsearch" role="button"> View ElasticSearch Page &raquo;</a></p>
+        </div>
+      </div>
+
+}

@@ -1,0 +1,33 @@
+@(message: String)
+<h2>Search Using ElasticSearch</h2>
+<br/>
+<h3>@message</h3>
+
+@helper.form(action = routes.ElasticSearch.elasticsearchresults()) {
+	Enter Search Term:<input name="term1" />
+	<input name="term2" type="hidden" value="french"/>
+	<button type="submit" name="ElasticSearch">Search ElasticSearch French Index</button>
+
+}
+    
+@helper.form(action = routes.ElasticSearch.elasticsearchresults()) {
+	Enter Search Term:<input name="term1" />
+	<input name="term2" type="hidden" value="german"/>
+	<button type="submit" name="ElasticSearch">Search ElasticSearch German Index</button>
+
+}
+
+@helper.form(action = routes.ElasticSearch.elasticsearchresults()) {
+	Enter Search Term:<input name="term1" />
+	<input name="term2" type="hidden" value="spanish"/>
+	<button type="submit" name="ElasticSearch">Search ElasticSearch Spanish Index</button>
+
+}
+
+@helper.form(action = routes.ElasticSearch.elasticsearchresults()) {
+	Enter Search Term:<input name="term1" />
+	<input name="term2" type="hidden" value="chinese"/>
+	<button type="submit" name="ElasticSearch">Search ElasticSearch Chinese Index</button>
+
+}
+    

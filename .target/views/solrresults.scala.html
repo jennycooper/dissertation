@@ -1,0 +1,14 @@
+@(message1: String, message2: String, results: List[String])
+<h2> Solr Search Results:<h2>
+<h3>@message1</h3>
+<h3>@message2</h3>
+<hr />
+<h3>Results are:</h3>
+
+<p>Number of files found: @results.size()</p>
+    
+@for(result <- results){
+	<p>@result</p>
+}
+
+    

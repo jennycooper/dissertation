@@ -1,0 +1,67 @@
+@(message: String)
+
+@main("Lucene Search"){
+<h2>Search Using Lucene</h2>
+
+@helper.form(action = routes.Lucene.luceneresultsfrench()) {
+	<fieldset>
+			<legend>French Index</legend>		
+			<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+				<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-4  col-lg-3">
+				<button type="submit" name="french" class="btn search">Search French Index</button>
+			</div>
+		</fieldset>
+}
+
+@helper.form(action = routes.Lucene.luceneresultsgerman()) {
+	<fieldset>
+			<legend>German Index</legend>		
+			<!-- <div class="row center-block"> -->
+			<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+				<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-3">
+				<button type="submit" name="german" class="btn search">Search German Index
+				</button>
+			</div>
+		</fieldset>
+
+}
+  
+@helper.form(action = routes.Lucene.luceneresultsspanish()) {
+	<fieldset>
+			<legend>Spanish Index</legend>		
+			<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+				<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-3">
+				<button type="submit" name="spanish" class="btn search">Search Spanish Index</button>
+			</div>
+		</fieldset>
+
+}  
+
+@helper.form(action = routes.Lucene.luceneresultschinese()) {
+	<fieldset>
+			<legend>Chinese Index</legend>		
+			<div class="col-xs-12 col-sm-12 col-md-8  col-lg-8">
+				<input name="term1" class="form-control" placeholder="Enter Search Term"/>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-lg-3">
+				<button type="submit" name="chinese" class="btn search" >Search Chinese Index</button>
+			</div>
+		</fieldset>
+
+}
+
+@helper.form(action = routes.Lucene.createluceneindex()) {
+<fieldset>
+			<legend>Creating Indices - please do NOT do this unless test data files are in the correct location. It will overwrite existing indices!</legend>		
+			<div class="col-xs-12 col-sm-4 col-lg-3">
+		<button type="submit" name="create" class="btn search">Create Indices </button>
+	</div>
+</fieldset>
+}   
+}

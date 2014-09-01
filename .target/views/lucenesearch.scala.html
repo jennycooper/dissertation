@@ -1,0 +1,33 @@
+@(message: String)
+
+<h2>Search Using Lucene xxxxxxx</h2>
+
+<h3>@message</h3>
+
+@helper.form(action = routes.Lucene.luceneresultsfrench()) {
+	Enter Search Term:<input name="term1" />
+	<button type="submit" name="french">Search French Index </button>
+
+}
+
+@helper.form(action = routes.Lucene.luceneresultsgerman()) {
+	Enter Search Term:<input name="term1" />
+	<button type="submit" name="german">Search German Index </button>
+
+}
+  
+@helper.form(action = routes.Lucene.luceneresultsspanish()) {
+	Enter Search Term:<input name="term1" />
+	<button type="submit" name="spanish">Search Spanish Index </button>
+
+}  
+
+@helper.form(action = routes.Lucene.luceneresultschinese()) {
+	Enter Search Term:<input name="term1" />
+	<button type="submit" name="chinese">Search Chinese Index </button>
+
+}
+
+@helper.form(action = routes.Lucene.createluceneindex()) {
+	<button type="submit" name="create">Create Indices </button>
+}   

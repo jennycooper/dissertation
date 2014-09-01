@@ -1,0 +1,16 @@
+@(message1: String, message2: String, results: List[String])
+@main("Elastic results"){
+	<h2> ElasticSearch Results<h2>
+	<h3>@message1</h3>
+	<h3>@message2</h3>
+	<hr />
+	<h3>Found @results.length results:</h3>
+
+	@for((item, index) <- results.zipWithIndex) {
+	    @if(index % 2 == 0){
+		<p class = "even">@item</p>
+		} else {
+		<p class = "odd">@item</p>
+		}
+	}
+}

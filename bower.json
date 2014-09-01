@@ -1,0 +1,22 @@
+{
+  "name": "searchapp",
+  "version": "0.0.0",
+  "description": "Master thesis Jennifer Cooper",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "Jennifer Cooper"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
